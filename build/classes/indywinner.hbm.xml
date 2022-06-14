@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "model.IndyWinnerModel" table = "indywinners">
+      
+      <meta attribute = "class-description">
+         This class contains the indywinners detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "year" column = "year" type = "int"/>
+      <property name = "driver" column = "driver" type = "string"/>
+      <property name = "averageSpeed" column = "averageSpeed" type = "double"/>
+      
+   </class>
+</hibernate-mapping>
